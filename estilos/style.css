@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body, html {
-    background-color: rgb(57, 52, 88);
+    background-image: linear-gradient(to top, rgb(15, 136, 116), rgb(22, 20, 37));
     height: 100vh;
     width: 100vw;
 }
@@ -20,6 +20,7 @@ main {
     width: 100vw;
 }
 section#login {
+    text-shadow: 0px 0px 0px rgb(58, 50, 94);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,17 +29,29 @@ section#login {
     background-color: white;
     width: 250px;
     height: 500px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
+    box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.747);
+
+    transition: width .3s, height .3s ;
+    transition-timing-function: ease;
     
 }
 section#login > div#imagem {
     background: rgb(57, 52, 88) url(../imagens/patern.jpg) no-repeat;
     background-size: cover;
     height: 200px;
-    background-position: left bottom;
+    background-position: center;
     display: block;
+    border-radius: 5px;
 }
 section#login > div#formulario {
+    display: block;
     padding: 10px;
+}
+div#formulario > h1 {
+    text-align: center;
+    font-size: 2em;
+}
+div#formulario > p {
+    font-size: 1em;
 }
