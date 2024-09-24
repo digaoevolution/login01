@@ -40,7 +40,7 @@ section#login > div#imagem {
     background: rgb(57, 52, 88) url(../imagens/patern.jpg) no-repeat;
     background-size: cover;
     height: 200px;
-    background-position: center;
+    background-position: center center;
     display: block;
     border-radius: 5px;
 }
