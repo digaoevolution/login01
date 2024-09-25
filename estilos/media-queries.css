@@ -18,9 +18,9 @@
         width: 70%;
     }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
     section#login {
-        width: 1200px;
+        width: 1000px;
     }
     section#login > div#imagem {
         float: left;
@@ -30,7 +30,6 @@
     }
     section#login > div#formulario {
         float: right;
-        width: 50%;
-        
+        width: 50%;  
     }
 }
