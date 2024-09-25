@@ -24,9 +24,9 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+   
 
-    background-color: white;
+    background-color: rgb(207, 207, 207);
     width: 290px;
     height: 540px;
     border-radius: 10px;
@@ -34,7 +34,7 @@ section#login {
 
     transition: width .3s, height .3s ;
     transition-timing-function: ease;
-    
+     transform: translate(-50%, -50%);
 }
 section#login > div#imagem {
     background: rgb(57, 52, 88) url(../imagens/patern.jpg) no-repeat;
@@ -54,17 +54,28 @@ div#formulario > h1 {
 }
 div#formulario > p {
     font-size: 1em;
+    
 }
-form >div.campo {
+form > div.campo {
     background-color:  rgb(48, 170, 154);
     width: 100%;
     border: 2px solid black;
     margin: 5px 0px;
     width: 100%;
     height: 40px;
+    border-radius: 5px;
+}
+div.campo > input {
+    border-radius: 5px;
+    width: 89%;
+    padding: 2px;
+    
 }
 div.campo > label {
     display: none;
+}
+div.campo > input:focus-within {
+    background-color: rgb(190, 255, 195);
 }
 form > input[type=submit] {
     display: block;
@@ -76,6 +87,7 @@ form > input {
     height: 40px;
     background-color: rgb(48, 170, 154);
     border-radius: 5px;
+    border: 2px solid black;
     margin-top: 10px;
     text-shadow: 0px 1px 0px rgb(0, 0, 0);
 }
@@ -96,7 +108,7 @@ form > a.botao {
     
     padding: 5px;
     border: 2px solid black;
-    text-shadow: 0px 1px 0px rgb(0, 0, 0);
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 form > a.botao:hover {
     background-color: rgb(102, 99, 136);
