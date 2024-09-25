@@ -60,6 +60,11 @@ form >div.campo {
     width: 100%;
     border: 2px solid black;
     margin: 5px 0px;
+    width: 100%;
+    height: 40px;
+}
+div.campo > label {
+    display: none;
 }
 form > input[type=submit] {
     display: block;
